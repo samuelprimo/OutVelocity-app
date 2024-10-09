@@ -15,7 +15,10 @@ const API_BASE_URL = 'http://localhost:8000/api';
 
 const getVeiculos = async () => {
   try {
+
     const response = await axios.get<Veiculo[]>(`${API_BASE_URL}/modelo/City`); // Tipagem explícita da resposta
+
+
     console.log('Dados retornados pela API:', response.data);
     return response.data;
   } catch (error) {
