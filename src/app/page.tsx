@@ -11,12 +11,12 @@ interface Veiculo {
   combustivel: string;
 }
 
-const API_BASE_URL = 'http://localhost:8000/api';
+process.env.NEXT_PUBLIC_BACKEND_ADRESS = process.env.NEXT_PUBLIC_BACKEND_ADRESS
 
 const getVeiculos = async () => {
   try {
 
-    const response = await axios.get<Veiculo[]>(`${API_BASE_URL}/modelo/City`); // Tipagem explícita da resposta
+    const response = await axios.get<Veiculo[]>(`${process.env.NEXT_PUBLIC_BACKEND_ADDRESS}/veiculos/`); // Tipagem explícita da resposta
 
 
     console.log('Dados retornados pela API:', response.data);
