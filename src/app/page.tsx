@@ -11,7 +11,7 @@ interface Veiculo {
   combustivel: string;
 }
 
-process.env.NEXT_PUBLIC_BACKEND_ADRESS = process.env.NEXT_PUBLIC_BACKEND_ADRESS
+const API = process.env.NEXT_PUBLIC_BACKEND_ADRESS
 
 const getVeiculos = async () => {
   try {
