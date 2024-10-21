@@ -50,8 +50,8 @@ const HomePage = () => {
     <header className={classes.header}>
       <div>
         <div className={classes.hero}>
-          <h1>NextLevel Food for NextLevel Foodies</h1>
-          <p>Taste & share food from all over the world.</p>
+          <h1>Os melhores carros em melhores condições.</h1>
+          <p>Venha conhecer nossa lista.</p>
         </div>
       </div>
     </header>
